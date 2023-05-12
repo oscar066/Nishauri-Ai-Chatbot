@@ -1,0 +1,86 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - thank
+  - report_side_effects
+  - treatment_regiment
+  - stable_client
+  - visit_frequency
+  - viral_load_meaning
+  - vl_sample_frequency
+  - baby_dependant_eid
+
+responses:
+  utter_greet:
+  - text: "Hey 🤗 How can I assist you?"
+  - text: "Hello there 🤚🏽"
+  - text: "Hey 🤗 How can I be of service today?"
+  - text: "Hello there! 🤚🏽 How can I assist you?"
+  - text: "Greetings! 🌞 How may I help you today?"
+  - text: "Hi! 🙋‍♀️ How's your day going so far?"
+  - text: "Welcome! 👋 How can I be of service today?"
+  - text: "Good to see you! 🤗 What can I do for you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye 👋"
+  - text: "Goodbye! Take care! 😊"
+  - text: "Bye 👋 Have a great day!"
+  - text: "Goodbye! Take care! 😊 See you soon!"
+  - text: "Farewell! Remember to stay healthy and happy! 🌈"
+  - text: "Wishing you a wonderful day ahead! Goodbye! 😄"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_thank:
+  - text: "You are Welcome"
+  - text: "You're welcome! 😊"
+  - text: "You're most welcome!"
+  - text: "No problem at all! Happy to help!"
+  - text: "Glad I could assist you!"
+
+  utter_report_side_effects:
+  - text: "Call the facility and report to your care provider."
+
+  utter_treatment_regiment:
+  - text: "Go to your treatment profile on the application to see this information. Or ask your treatment provider at the facility to educate you more on this."
+
+  utter_stable_client:
+  - text: "A stable client is a person living with HIV on ART and is adherent and does not require frequent clinical consultation."
+
+  utter_visit_frequency:
+  - text: "Clients who are stable are usually put under differentiated care model, where they attend clinical consultations after every other 6months."
+
+  utter_viral_load_meaning:
+  - text: "A High viral load is any results for VL with over 836 cp/ml while a LDL VL - Low Detectable Viral Load is any results for VL with a number of less than 800cp/ml"
+
+  utter_suppressed_vs_undetectable_viral_load:
+  - text: "Suppressed Viral Load is same as LDL which means you are under the 800mark while Undetectable VL means that they can not tell how much HIV is in your blood because it's very low for any cp/ml."
+
+  utter_baby_dependant_eid:
+  - text: "Yes you should visit the facility ,so that they can be immediately get started on Art treatment."
+
+  utter_vl_sample_frequency:
+  - text: "For a stable client it should be as often as after every 3 months while for unstable clients, the treatment provider shall advise depending on how well you are adhering to taking your medication."
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

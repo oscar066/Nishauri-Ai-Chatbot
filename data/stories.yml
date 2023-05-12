@@ -1,0 +1,94 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: path 3 report_side_effects only
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: report_side_effects
+  - action: utter_report_side_effects
+  - intent: thank
+  - action: utter_thank
+  - intent: goodbye 
+  - action: utter_goodbye
+
+
+- story: path 4 treatment_regiment and baby_dependant_eid 
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: treatment_regiment
+  - action: utter_treatment_regiment
+  - intent: baby_dependant_eid
+  - action: utter_baby_dependant_eid
+  - intent: thank
+  - action: utter_thank
+  - intent: goodbye 
+  - action: utter_goodbye
+
+- story: path 5 stable_client only
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: stable_client
+  - action: utter_stable_client
+  - intent: thank
+  - action: utter_thank
+  - intent: goodbye 
+  - action: utter_goodbye
+
+- story: path 6 viral_load_meaning 
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: viral_load_meaning
+  - action: utter_viral_load_meaning
+  - intent: vl_sample_frequency
+  - action: utter_vl_sample_frequency
+  - intent: thank
+  - action: utter_thank
+  - intent: goodbye 
+  - action: utter_goodbye
+
+- story: path 7 visit_frequency and side_effects 
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: report_side_effects
+  - action: utter_report_side_effects
+  - intent: visit_frequency
+  - action: utter_visit_frequency
+  - intent: thank
+  - action: utter_thank
+  - intent: goodbye 
+  - action: utter_goodbye
+
