@@ -11,3 +11,21 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+
+# Responding to FAQs and chitchat questions
+- rule: respond to FAQs
+  steps:
+  - intent: faq
+  - action: utter_faq
+
+- rule: respond to chitchat
+  steps:
+  - intent: chitchat
+  - action: utter_chitchat
+
+- rule: respond to FAQs for General Questions
+  steps:
+  - intent: faq_2
+  - action: utter_faq_2
+  

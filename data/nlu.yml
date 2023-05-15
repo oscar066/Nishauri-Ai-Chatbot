@@ -71,6 +71,7 @@ nlu:
     - of course
     - that sounds good
     - correct
+    - that's correct
 
 - intent: deny
   examples: |
@@ -193,52 +194,545 @@ nlu:
     - you are chatbot
     - you're a bot
 
-- intent: report_side_effects
+
+- intent: chitchat/ask_name
+  examples: |
+    - What is your name?
+    - May I know your name?
+    - What do people call you?
+    - Do you have a name for yourself?
+    - Are you known by a specific name?
+    - Can you share your name with me?
+    - How should I address you?
+    - What's the name you go by?
+
+- intent: chitchat/ask_weather
+  examples: |
+    - What's the weather like today?
+    - Does it look sunny outside today?
+    - Oh, do you mind checking the weather for me please?
+    - Is it going to rain later?
+    - Can you provide a weather update?
+    - What's the forecast for tomorrow?
+    - Will it be cold this weekend?
+    - Can you tell me if it's windy outside?
+
+- intent: chitchat/ask_age
+  examples: |
+    - How old are you?
+    - Can I ask about your age?
+    - What's your age?
+    - May I know your age?
+    - Are you a young bot?
+    - Do you age like humans?
+    - Is age relevant for a bot like you?
+    - Are you considered old or young in bot years?
+
+- intent: chitchat/how_are_you
+  examples: |
+    - How are you doing?
+    - How are things with you?
+    - How's your day going?
+    - Are you feeling okay?
+    - Is everything fine on your end?
+    - How's life treating you?
+    - Any updates on your well-being?
+    - Are you in a good mood today?
+
+- intent: chitchat/joke
+  examples: |
+    - Tell me a joke!
+    - Do you know any jokes?
+    - I could use a good laugh.
+    - Make me laugh!
+    - Share a funny story with me.
+    - Do you have a favorite joke?
+    - Can you bring a smile to my face?
+    - I need a bit of humor right now.
+
+
+
+- intent: faq/report_side_effects
   examples: |
     - What should I do If I get side effects from the medicine given?
     - I'm experiencing side effects from the medication. What should I do?
     - What steps should I take if I encounter any side effects?
 
-- intent: treatment_regiment
+- intent: faq/treatment_regiment
   examples: |
     - What's the name of the treatment regimen I'm taking?
     - Can you tell me the name of my current treatment regimen?
     
 
-- intent: stable_client_inquiry
+- intent: faq/stable_client_inquiry
   examples: |
     - Who is a stable client when it comes to treatment?
     - What defines a stable client in terms of treatment?
     - What are the criteria for being classified as a stable client?
     
-- intent: visit_frequency
+- intent: faq/visit_frequency
   examples: |
     - How often should I visit the facility if I am a stable client?
     - What is the frequency of clinical consultations for stable clients?
     - How frequently do stable clients need to attend check-ups?
     - Are there specific guidelines for stable clients regarding facility visits?
 
-- intent: viral_load_meaning
+- intent: faq/viral_load_meaning
   examples: |
     - What's a High viral load and LDL viral load?
     - Can you explain the difference between High viral load and LDL viral load?
     
 
-- intent: suppressed_vs_undetectable_viral_load
+- intent: faq/suppressed_vs_undetectable_viral_load
   examples: |
     - What's the difference between Suppressed viral load and Undetectable viral load?
     - Can you explain the distinction between Suppressed viral load and Undetectable viral load?
     - 
 
-- intent: baby_dependant_eid
+- intent: faq/baby_dependant_eid
   examples: |
     - If my baby's/dependant's EID results are positive should I visit the health facility?
     - What should I do if my baby's EID results come back positive?
     - Are there specific steps to follow if my baby's EID results are positive?
 
-- intent: vl_sample_frequency
+- intent: faq/vl_sample_frequency
   examples: |
     - How often should I go for my VL sample to be taken?
     - What is the recommended frequency for VL sample collection?
-    - 
+
+
+
+- intent: faq_2/temperature_fever_signs
+  examples: |
+    - How do I know if I have a fever?
+    - What are the signs of fever?
+    - What is the body temperature for fever?
+
+- intent: faq_2/headache_home_medication
+  examples: |
+    - How can I treat a headache?
+    - What are some home remedies for headaches?
+    - What medication can I take for headaches
+
+- intent: faq_2/cold_symptoms_signs
+  examples: |
+    - What are the symptoms of a cold?
+    - How do I know if I have a cold
+    - What are the signs of a common cold?
+
+- intent: faq_2/what_is_hivtype1
+  examples: |
+    - What exactly is HIV type 1?
+    - HIV type 1: What is it?
+    - What is HIV type 1?
+
+- intent: faq_2/hivtype1_hivtype2
+  examples: |
+    - How is HIV type 1 difffferent from HIV type 2?
+    - What distinguishes HIV type 1 from HIV type 2
+    - What separates HIV type 1 from type 2
+
+- intent: faq_2/signs_symptoms_hivtype1
+  examples: |
+    - What are the symptoms of HIV type 1?
+    - What signs and symptoms are present in HIV type 1?
+    - What are the signs and symptoms of HIV type 1?
+
+- intent: faq_2/hivtype1_cure
+  examples: |
+    - Can HIV type 1 be cured?
+    - Can HIV-1 be treated?
+    - Is there a cure for HIV type 1?
+
+- intent: faq_2/hivtype1_spread_transmitted
+  examples: |
+    - How is HIV type 1 transmited?
+    - How does HIV type 1 spread?
+    - In what way is HIV type 1 spread?
+
+- intent: faq_2/causal_contact
+  examples: |
+    - Is HIV type 1 transmited through casual contact?
+    - Can you get HIV type 1 from a casual contact?
+    - Is casual contact capable of transmitting HIV type 1?
+
+- intent: faq_2/riskfactor_danger
+  examples: |
+    - What are the risk factors for HIV type 1?
+    - What are the danger signs of type 1 HIV?
+    - What raises your chance of contracting HIV type 1?
+
+- intent: faq_2/prevent_avoid
+  examples: |
+    - How can I prevent HIV type 1?
+    - How can I avoid contracting HIV type 1
+    - How can I avoid getting HIV type 1?
+
+- intent: faq_2/infection_detect_identify
+  examples: |
+    - How quickly can HIV type 1 infection be identified?
+    - How soon after infection can HIV type 1 be detected?
+    - How soon after infection may HIV type 1 be found?
+
+- intent: faq_2/testing_time
+  examples: |
+    - When may people get tested for HIV type 1?
+    - What time frame is there for type 1 HIV testing?
+    - What is the window period for HIV type 1 testing?
+
+- intent: faq_2/test_available
+  examples: |
+    - What types of HIV tests are available?
+    - What varieties of HIV testing are offered?	
+    - Which HIV test options are available?
+
+- intent: faq_2/accurate_reliable_test
+  examples: |
+    - How accurate are HIV tests?
+    - How reliable are HIV tests?
+    - How reliable are testing for HIV?
+
+- intent: faq_2/positive_for_hivtype1
+  examples: |
+    - What should I do if I test positive for HIV type 1?
+    - If I am HIV type 1 positive, what should I do?
+    - If my HIV type 1 test results are positive, what should I do?
+
+- intent: faq_2/treatment_option
+  examples: |
+    - What treatment options are available for HIV type 1? 
+    - What types of HIV type 1 treatments are available?
+    - What choices are there for HIV type 1 treatment?
+
+- intent: faq_2/effective_medication
+  examples: |
+    - How eﬀective are HIV medications?
+    - How well do HIV medications work?
+    - Are HIV medications effective?
+
+- intent: faq_2/negative_side_effects
+  examples: |
+    - What are the side effects of HIV medications?
+    - What negative effects do HIV medications have?
+    - What adverse effects might HIV medications cause?
+
+- intent: faq_2/pregnant_take_medication
+  examples: |
+    - Can HIV medications be taken during pregnancy?
+    - Can a pregnant woman take HIV medications?
+    - Can you take HIV medications while you're pregnant?
+
+- intent: faq_2/medication_interactions
+  examples: |
+    - Can HIV medications interact with other medications?
+    - Do HIV medications have any interactions with other medications?
+    - Do HIV medications interact with other medications?
+
+- intent: faq_2/viralload_measurement
+  examples: |
+    - What is viral load and how is it measured?
+    - How is viral load measured? What is viral load?
+    - How is viral load determined and what is it?
+
+- intent: faq_2/important_cd4_count
+  examples: |
+    - What is CD4 count and why is it important?
+    - Why is CD4 count essential and what does it mean?
+    - How important is CD4 count and what does it mean?
+
+- intent: faq_2/frequent_check_cd4_viralload
+  examples: |
+    - How often should I get my viral load and CD4 count checked?
+    - How frequently should my viral load and CD4 count be assessed?
+    - How frequently should I get my CD4 count and viral load evaluated?
+
+- intent: faq_2/stigma_discrimination
+  examples: |
+    - What is HIV/AIDS stigma and discrimination?
+    - What are discrimination and stigma around HIV/AIDS?
+    - What are HIV/AIDS stigma and discrimination?
+
+- intent: faq_2/cope_with_diagnosis
+  examples: |
+    - How can I cope with an HIV diagnosis?
+    - How can I handle being told I have HIV?
+    - What can I do if I'm diagnosed with HIV?
+
+- intent: faq_2/talk_with_partner
+  examples: |
+    - How can I talk to my partner about HIV testing?
+    - How can I bring up HIV testing with my partner?
+    - How do I approach my partner about getting tested for HIV?
+
+- intent: faq_2/disclosure_laws
+  examples: |
+    - What are the laws regarding HIV disclosure in Kenya?
+    - What Kenyan laws govern the disclosure of HIV?
+    - What regulations apply to HIV disclosure in Kenya?
+
+- intent: faq_2/children_possibility
+  examples: |
+    - Can I still have children if I am HIV-positive?
+    - If I have HIV, can I still have children?
+    - If I have HIV, is it still possible to have kids?
+
+- intent: faq_2/prevent_motherchild_transmission
+  examples: |
+    - How can I prevent mother-to-child transmission of HIV?
+    - How do I stop the HIV virus from being passed from mother to child?
+    - How can I stop HIV from being passed from mother to child?
+
+- intent: faq_2/support_living_hiv
+  examples: |
+    - How can I support a loved one living with HIV?
+    - How can I help a loved one who is HIV positive?
+    - What can I do to help a loved one who has HIV?
+
+- intent: faq_2/donate_if_positive
+  examples: |
+    - Can I donate blood if I am HIV-positive?
+    - Can someone with HIV donate blood?
+    - If I have HIV, can I still donate blood?
+
+- intent: faq_2/prevention_control_strategies
+  examples: |
+    - What are the HIV/AIDS prevention and control measures in Kenya?
+    - What HIV/AIDS preventive and control strategies are in place in Kenya?
+    - What preventative and control strategies are used in Kenya for HIV/AIDS?
+
+- intent: faq_2/travel_if_positive
+  examples: |
+    - Can I travel abroad if I am HIV-positive?
+    - Can someone with HIV travel abroad?
+    - Can someone with HIV go abroad?
+
+- intent: faq_2/access_treatment
+  examples: |
+    - How can I access HIV treatment and care services in Kenya?
+    - How can I get access to HIV care and treatment in Kenya?
+    - How can I obtain HIV care and treatment services in Kenya?
+
+- intent: faq_2/prep_work_function
+  examples: |
+    - What is PrEP and how does it work?
+    - How does PrEP work and what is it?
+    - Why is PrEP used and how does it function?
+
+- intent: faq_2/prevent_sex_transmission
+  examples: |
+    - Can PrEP prevent HIV transmission during sex?
+    - Can PrEP stop the spread of HIV during sex?
+    - Can PrEP stop HIV from being spread during sex?
+
+- intent: faq_2/prep_effectiveness
+  examples: |
+    - How effective is PrEP?
+    - How well does PrEP work?
+    - Does PrEP work well?
+
+- intent: faq_2/prep_effects
+  examples: |
+    - What are the side effects of PrEP?
+    - How does PrEP affect you in the long run?
+    - What negative consequences does PrEP have?
+
+- intent: faq_2/prepuse_pregnant_breastfeeding
+  examples: |
+    - Can I take PrEP if I am pregnant or breastfeeding?
+    - Can I use PrEP if I'm expecting or nursing?
+    - I'm pregnant or nursing. Can I take PrEP?
+
+- intent: faq_2/right_best_treatment
+  examples: |
+    - How do I know if PrEP is right for me?
+    - How can I tell if taking PrEP is right for me?
+    - How can I tell if PrEP is the best treatment for me?
+
+- intent: faq_2/purchase_obtain_prep
+  examples: |
+    - How do I get PrEP in Kenya?
+    - In Kenya, how can I obtain PrEP?
+    - How can I purchase PrEP in Kenya?
+
+- intent: faq_2/prep_function_work
+  examples: |
+    - What is PEP and how does it work?
+    - Why is PrEP used and how does it function?
+    - How does PrEP work and what is it?
+
+- intent: faq_2/prevent_hiv_sexspread
+  examples: |
+    - Can PrEP prevent HIV transmission during sex?
+    - Can PrEP stop the spread of HIV during sex?
+    - Can PrEP stop HIV from being spread during sex?
+
+- intent: faq_2/pep_timetaken
+  examples: |
+    - When should I take PEP?
+    - When should I start taking PEP?
+    - I need to take PEP at what time?
+
+- intent: faq_2/mental_psychological_effect
+  examples: |
+    - How does HIV impact mental health?
+    - How is mental health affected by HIV?
+    - What psychological effects does HIV have?
+
+- intent: faq_2/adverse_mental_effect
+  examples: |
+    - Can HIV medications cause mental health problems?
+    - Can HIV drugs have an adverse effect on mental health?
+    - Can HIV drugs lead to issues with mental health?
+
+- intent: faq_2/mental_health_resources
+  examples: |
+    - What mental health resources are available for people living with HIV?
+    - What services are offered to HIV-positive patients for mental health?
+    - What services are offered for HIV-positive individuals in terms of mental health?
+
+- intent: faq_2/reinfect_hivtype1
+  examples: |
+    - Can I be re-infected with HIV type 1?
+    - Can I contract HIV type 1 again?
+    - I already have HIV type 1; might I get it again?
+
+- intent: faq_2/breastfeeding_transmission
+  examples: |
+    - Can HIV type 1 be transmited through breastfeeding?
+    - Is it possible to contract HIV type 1 while breastfeeding?
+    - Is it possible for HIV type 1 to spread through breastfeeding?
+
+- intent: faq_2/support_advocacy_research
+  examples: |
+    - How can I support HIV research and advocacy efforts?
+    - How can I assist HIV advocacy and research efforts?
+    - How can I help with the fight against HIV/AIDS?
+
+- intent: faq_2/drug_resistance
+  examples: |
+    - What is HIV drug resistance?
+    - What is medication resistance for HIV?
+    - How does HIV drug resistance work?
+
+- intent: faq_2/drug_resistance_diagnosis
+  examples: |
+    - How is HIV drug resistance diagnosed?
+    - How is HIV medication resistance identified?
+    - How is drug resistance to HIV identified?
+
+- intent: faq_2/drug_resistance_treatment
+  examples: |
+    - What treatment options are available for HIV drug resistance?
+    - What options are there for HIV medication resistance therapy?
+    - What HIV drug-resistance treatments are available?
+
+- intent: faq_2/drug_resistance_prevention
+  examples: |
+    - How can I prevent HIV drug resistance?
+    - How can I avoid HIV medication resistance?
+    - What can I do to avoid HIV drug resistance?
+
+- intent: faq_2/manage_hiv_fatigue
+  examples: |
+    - How can I manage HIV-related fatigue?
+    - How can I deal with my HIV-related exhaustion?
+    - How can I treat fatigue brought on by HIV?
+
+- intent: faq_2/manage_hiv_pain
+  examples: |
+    - How can I manage HIV-related pain?
+    - How can I control my pain from having HIV?
+    - How do I treat my pain from having HIV?
+
+- intent: faq_2/hiv_oralsex_transmission
+  examples: |
+    - Can HIV be transmited through oral sex?
+    - Is it possible to contract HIV through oral sex?
+    - Can oral sex spread HIV?
+
+- intent: faq_2/hiv_analsex_transmission
+  examples: |
+    - Can HIV be transmited through anal sex?
+    - Is it possible to contract HIV through anal sex?
+    - Can anal sex spread HIV?
+
+- intent: faq_2/hiv_vaginalsex_transmission
+  examples: |
+    - Can HIV be transmited through vaginal sex?
+    - Is it possible to contract HIV through vaginal sex?
+    - Can  vaginal sex spread HIV?
+
+- intent: faq_2/riskfactors_sex_transmission
+  examples: |
+    - What are the risk factors for HIV transmission through sex?
+    - What are the chances of HIV being transmitted through sex?
+    - What are the chances that someone will contract HIV through sex?
+
+- intent: faq_2/reduce_sex_transmission
+  examples: |
+    - How can I reduce my risk of HIV transmission during sex?
+    - How can I lower the chance that I may contract HIV during sex?
+    - What can I do to lower the possibility that I will contract HIV during sex?
+
+- intent: faq_2/support_community_prevention
+  examples: |
+    - How can I support HIV prevention efforts in my community?
+    - How can I help my community's efforts to prevent HIV/AIDS?
+    - How can I help my community's HIV prevention efforts?
+
+- intent: faq_2/hivaids_fight_advocacy
+  examples: |
+    - How can I get involved in HIV/AIDS advocacy?
+    - How can I get involved in the fight against HIV/AIDS?
+    - How can I participate in the HIV/AIDS advocacy movement?
+
+- intent: faq_2/aids_signs_symptoms
+  examples: |
+    - What are the symptoms of AIDS?
+    - What signs and symptoms do AIDS have?
+    - What are the AIDS symptoms?
+
+- intent: faq_2/aids_cure
+  examples: |
+    - Can AIDS be cured?
+    - Is AIDS curable?
+    - AIDS: Is it curable?
+
+- intent: faq_2/life_expectancy
+  examples: |
+    - What is the life expectancy for someone with AIDS?
+    - What is the average lifespan of an AIDS patient?
+    - How long will someone with AIDS likely live?
+
+- intent: faq_2/aids_diagnosis
+  examples: |
+    - How is AIDS diagnosed?
+    - Exactly how is AIDS detected?
+    - How is AIDS identified?
+
+- intent: faq_2/what_opportunistic_infection
+  examples: |
+    - What are opportunistic infections?
+    - What do opportunistic infections entail?
+    - Opportunistic infections: what do they entail?
+
+- intent: faq_2/hivcommon_opportunistic_infection
+  examples: |
+    - What opportunistic infections are common in people with HIV/AIDS?
+    - Which opportunistic diseases are prevalent among HIV/AIDS patients?
+    - What opportunistic infections affect people with HIV/AIDS frequently?
+
+- intent: faq_2/opportunistic_infection_prevention
+  examples: |
+    - How can opportunistic infections be prevented?
+    - What can be done to stop opportunistic infections?
+    - What measures may be taken to prevent opportunistic infections?
+
+- intent: faq_2/thrush_relation
+  examples: |
+    - What is thrush and how is it related to HIV?
+    - What is the connection between thrush and HIV?
+    - How is thrush connected to HIV and what does it entail?
+
+
 
