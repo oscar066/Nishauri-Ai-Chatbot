@@ -14,10 +14,10 @@ rules:
 
 
 # Responding to FAQs and chitchat questions
-- rule: respond to FAQs
-  steps:
-  - intent: faq
-  - action: utter_faq
+#- rule: respond to FAQs
+#  steps:
+#  - intent: faq
+#  - action: utter_faq
 
 - rule: respond to chitchat
   steps:
@@ -28,4 +28,3 @@ rules:
   steps:
   - intent: faq_2
   - action: utter_faq_2
-  

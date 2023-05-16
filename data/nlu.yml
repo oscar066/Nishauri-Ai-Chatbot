@@ -194,6 +194,7 @@ nlu:
     - you are chatbot
     - you're a bot
 
+# Chitchat 
 
 - intent: chitchat/ask_name
   examples: |
@@ -252,55 +253,55 @@ nlu:
 
 
 
-- intent: faq/report_side_effects
+- intent: report_side_effects
   examples: |
     - What should I do If I get side effects from the medicine given?
     - I'm experiencing side effects from the medication. What should I do?
     - What steps should I take if I encounter any side effects?
 
-- intent: faq/treatment_regiment
+- intent: treatment_regiment
   examples: |
     - What's the name of the treatment regimen I'm taking?
     - Can you tell me the name of my current treatment regimen?
     
 
-- intent: faq/stable_client_inquiry
+- intent: stable_client_inquiry
   examples: |
     - Who is a stable client when it comes to treatment?
     - What defines a stable client in terms of treatment?
     - What are the criteria for being classified as a stable client?
     
-- intent: faq/visit_frequency
+- intent: visit_frequency
   examples: |
     - How often should I visit the facility if I am a stable client?
     - What is the frequency of clinical consultations for stable clients?
     - How frequently do stable clients need to attend check-ups?
     - Are there specific guidelines for stable clients regarding facility visits?
 
-- intent: faq/viral_load_meaning
+- intent: viral_load_meaning
   examples: |
     - What's a High viral load and LDL viral load?
     - Can you explain the difference between High viral load and LDL viral load?
     
 
-- intent: faq/suppressed_vs_undetectable_viral_load
+- intent: suppressed_vs_undetectable_viral_load
   examples: |
     - What's the difference between Suppressed viral load and Undetectable viral load?
     - Can you explain the distinction between Suppressed viral load and Undetectable viral load?
     - 
 
-- intent: faq/baby_dependant_eid
+- intent: baby_dependant_eid
   examples: |
     - If my baby's/dependant's EID results are positive should I visit the health facility?
     - What should I do if my baby's EID results come back positive?
     - Are there specific steps to follow if my baby's EID results are positive?
 
-- intent: faq/vl_sample_frequency
+- intent: vl_sample_frequency
   examples: |
     - How often should I go for my VL sample to be taken?
     - What is the recommended frequency for VL sample collection?
 
-
+# FAQs 
 
 - intent: faq_2/temperature_fever_signs
   examples: |
